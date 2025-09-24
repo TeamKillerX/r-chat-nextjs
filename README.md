@@ -1,8 +1,15 @@
-Demo: https://chat.ryzenths.dpdns.org/
+# Ryzenth Chat
+
+> **⚠️ Note:** This version is **not actively updated**.
+> To run or modify, **download the ZIP file** and open it in **VSCode**.
+
+**Demo:** [https://chat.ryzenths.dpdns.org/](https://chat.ryzenths.dpdns.org/)
 
 ![Image](https://github.com/user-attachments/assets/1433a84c-ccdf-49a4-a886-090f9525aebd)
 
-## Frontend
+---
+
+## Frontend Example
 
 ```tsx
 import React, { useState, useRef, useEffect, useCallback } from 'react'
@@ -18,12 +25,15 @@ const response = await fetch('/api/chat', {
 })
 
 const SomethingApp: React.FC = () => {
-  .........
+  // code gey here...
 }
 export default SomethingApp
 ```
 
-## Backend API/Library
+---
+
+## Backend API / Library
+
 ```ts
 import OpenAI from 'openai';
 
@@ -58,25 +68,53 @@ console.log(completion.choices[0].message.content);
 console.log(response.output_text);
 ```
 
-##  Environment
-- `MONGODB_URI`: (Optional) if you can delete any file
-- `RYZENTH_API_KEY_AI`: (for blank)
+---
 
-> **Important Note:**
-> Remember, **starting October 1**, Ryzenth API will require **authentication for all API access**. However,
-> You can still use it for **free until September 30**. Plan accordingly
+## 📝 Environment Variables
 
-## Command Terminal
+| Variable             | Description                                 |
+| -------------------- | ------------------------------------------- |
+| `MONGODB_URI`        | (Optional) for storing or deleting any file |
+| `RYZENTH_API_KEY_AI` | Required for API access (just ignore blank)                  |
+
+> **Important:**
+> Starting **October 1, 2025**, the Ryzenth API will **require authentication** for all access.
+> You can still use it **for free until September 30, 2025** plan ahead.
+
+---
+
+## 💻 Local Development
+
 ```bash
-- npm run dev
-- npm build
-- npm install
+npm install
+npm run dev
+npm run build
 ```
 
-## Endpoints
-- `https://api.ryzenths.dpdns.org/api/v1/chat/completions`
+---
 
-## License
+## 🔗 API Endpoints
+
+* `https://api.ryzenths.dpdns.org/api/v1/chat/completions`
+
+---
+
+## ☁️ Deploy to Vercel
+
+1. Push your code to **GitHub**.
+2. Go to [https://vercel.com/new](https://vercel.com/new).
+3. Import your repository.
+4. Add your **Environment Variables** in the **Vercel Project Settings**:
+
+   * `MONGODB_URI`
+   * `RYZENTH_API_KEY_AI`
+5. Click **Deploy**.
+
+Your app will be live at `https://domainname.vercel.app/` within seconds.
+
+---
+
+## 📄 License
 
 **MIT License © 2025 Ryzenth Solo Dev from TeamKillerx**
 
