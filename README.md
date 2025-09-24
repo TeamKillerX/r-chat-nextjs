@@ -66,6 +66,13 @@ console.log(response.output_text);
 > Remember, **starting October 1**, Ryzenth API will require **authentication for all API access**. However,
 > You can still use it for **free until September 30**. Plan accordingly
 
+## Command Terminal
+```bash
+- npm run dev
+- npm build
+- npm install
+```
+
 ## Endpoints
 - `https://api.ryzenths.dpdns.org/api/v1/chat/completions`
 
