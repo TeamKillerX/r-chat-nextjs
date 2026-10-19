@@ -109,7 +109,7 @@
   font-size: 0.7rem;
 }
 
-.compact-table th, 
+.compact-table th,
 .compact-table td {
   padding: 0.25rem 0.5rem;
 }
@@ -123,11 +123,11 @@
   .prose table {
     font-size: 0.7rem;
   }
-  
+
   .prose th, .prose td {
     padding: 0.25rem 0.5rem;
   }
-  
+
   .prose pre {
     font-size: 0.7rem;
     padding: 0.375rem;
